@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+ xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0"> 
+  <display-name>interior-design</display-name>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+
+  
+ <servlet>
+
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>sample.LoginServlet</servlet-class>  
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern> 
+  </servlet-mapping>
+
+  
+<servlet>
+    <servlet-name>Add</servlet-name>
+    <servlet-class>sample.AddImage</servlet-class>  
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>Add</servlet-name>
+    <url-pattern>/add</url-pattern> 
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>DeleteImage</servlet-name>
+  <servlet-class>sample.DeleteImage</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>DeleteImage</servlet-name>
+  <url-pattern>/delete</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>Addkitchen</servlet-name>
+<servlet-class>sample.AddImagekitchen</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Addkitchen</servlet-name>
+<url-pattern>/addkitchen</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>Addbedroom</servlet-name>
+<servlet-class>sample.AddImagebedroom</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Addbedroom</servlet-name>
+<url-pattern>/addbedroom</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>Addgarden</servlet-name>
+<servlet-class>sample.AddImagegarden</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Addgarden</servlet-name>
+<url-pattern>/addgarden</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>newvendorReq</servlet-name>
+    <servlet-class>sample.NewRegisterVendorServlet</servlet-class>  
+</servlet>
+<servlet-mapping>
+    <servlet-name>newvendorReq</servlet-name>
+    <url-pattern>/newvendorreq</url-pattern> 
+</servlet-mapping>
+
+<!-- <servlet>
+<servlet-name>approve_request</servlet-name>
+<servlet-class>sample.ApproveRequestServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>approve_request</servlet-name>
+<url-pattern>/AR</url-pattern>
+</servlet-mapping> -->
+<servlet>
+<servlet-name>vendorsignup</servlet-name>
+<servlet-class>sample.VendorAccountcreate</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>vendorsignup</servlet-name>
+<url-pattern>/VendorAccountcreate</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>vendormainlogin</servlet-name>
+<servlet-class>sample.Vendorloginmainservlet</servlet-class>
+</servlet>
+<servlet-mapping>
+ <servlet-name>vendormainlogin</servlet-name>
+ <url-pattern>/Vendor/Vendorloginmainservlet</url-pattern>
+</servlet-mapping>
+
+</web-app>
